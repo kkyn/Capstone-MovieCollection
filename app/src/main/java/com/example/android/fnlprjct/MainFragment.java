@@ -294,7 +294,9 @@ public class MainFragment extends Fragment
 
             getLoaderManager().restartLoader(MOVIE_FRAGMENT_ID, null, this);
 
-            MSyncAdapter.syncImmediately(getContext());
+
+            MSyncAdapter.syncImmediately(getActivity());
+            //MSyncAdapter.syncImmediately(getContext());
 
             Intent intent = new Intent();
             intent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
@@ -461,12 +463,11 @@ public class MainFragment extends Fragment
     }
 
     private String updateActionBarTitle() {
-
+        // -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
         String year = Utility.getPreferredYear(getContext());
         String sortMoviesBy = Utility.getPreferredSortSequence(getContext());
         String category;
         int option;
-
         // -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
         if (sortMoviesBy.equals(getString(R.string.pref_value_movies_sortby_default))) {
 
@@ -484,8 +485,11 @@ public class MainFragment extends Fragment
         // -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
         String title;
-        if(option==1){title = year + " : " + category;}
-        else         {title = category;}
+        if (option == 1) {
+            title = year + " : " + category;
+        } else {
+            title = category;
+        }
         return title;
     }
     //----------------------------------------------------------

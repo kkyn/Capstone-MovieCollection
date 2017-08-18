@@ -1,11 +1,53 @@
-.gradle
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
+
+# Keystore files
+*.jks
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Built application files
+*.apk
 
 # Ignore this file when load to GitHub
 # To give added security
 /keystore.properties
+
+# Intellij
+*.iml
+/.idea/workspace.xml
+/.idea/libraries
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+
+.DS_Store
+/captures
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Generated files
+bin/
+gen/
+out/
+
+######################################
+# -------- original ----------
+######################################
+#.gradle
+#/local.properties
+#/.idea/workspace.xml
+#/.idea/libraries
+#.DS_Store
+#/build
+#/captures
+#
+## Ignore this file when load to GitHub
+## To give added security
+#/keystore.properties

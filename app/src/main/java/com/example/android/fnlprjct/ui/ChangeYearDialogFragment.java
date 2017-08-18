@@ -209,7 +209,7 @@ public class ChangeYearDialogFragment extends DialogFragment
 
             getContext().getContentResolver().notifyChange(MovieInfoEntry.CONTENT_URI, null);
 
-            MSyncAdapter.syncImmediately(getContext());
+            MSyncAdapter.syncImmediately(getActivity());
         }
     }
 }

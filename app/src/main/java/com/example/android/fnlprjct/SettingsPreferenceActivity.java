@@ -33,13 +33,10 @@ public class SettingsPreferenceActivity extends PreferenceActivity
 
         // - Add 'general' preferences, defined in the XML file
         // - Load the preferences from an XML resource
-        // TODO: Add preferences from XML
         addPreferencesFromResource(R.xml.pref_general);
 
         // For all preferences, attach an OnPreferenceChangeListener so the UI summary can be
         // updated when the preference changes.
-        // TODO: Add preferences
-
         // Finds a Preference based on its key.
         Preference mPreference = this.findPreference(getString(R.string.pref_key_movies_sortby));
 
