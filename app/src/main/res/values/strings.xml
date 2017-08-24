@@ -75,7 +75,7 @@
 
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++  -->
     <!-- Used in widget -->
-    <string name="widget_title">Top Movies</string>
+    <string name="widget_title">Movie Collection</string>
     <string name="widget_name">Movie Widget</string>
 
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++  -->

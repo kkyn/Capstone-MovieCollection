@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Primary colors -->
-    <color name="lime_300">#DCE775</color>
-    <color name="lime_500">#CDDC39</color>
-    <color name="lime_700">#AFB42B</color>
+    <color name="teal_300">#64d8cb</color>
+    <color name="teal_500">#26a69a</color>
+    <color name="teal_700">#00766c</color>
     <!-- Secondary colors -->
     <color name="pink_a400">#F50057</color>
 
@@ -13,9 +13,12 @@
     <color name="purple_500">#9c27B0</color>
     <color name="orange_500">#ff9800</color>
 
-    <color name="widget_header_background">#aadedede</color>
-    <color name="widget_listitem_textcolor">#ffffffff</color>
+    <color name="widget_header_background">#eeffffff</color>
+    <color name="widget_listitem_textcolor">#aaffffff</color>
     <color name="cardview_background">#ffffffee</color>
     <color name="text_black">#000000</color>
 
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#bbbbbb</color>
+    <color name="divider">#DDDDDD</color>
 </resources>

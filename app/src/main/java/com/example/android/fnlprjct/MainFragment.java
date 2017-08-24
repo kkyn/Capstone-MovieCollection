@@ -602,6 +602,17 @@ public class MainFragment extends Fragment
         mainRyclrVw.setAdapter(rvAdapter);
         mainRyclrVw.setHasFixedSize(true);
 
+        mainRyclrVw.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+
+                if (dy<0){
+                    editfab.show();
+                }
+                else editfab.hide();
+            }
+        });
+
         if ((savedInstanceState != null) && savedInstanceState.containsKey(SELECTED_INDEX)) {
             mPosition = savedInstanceState.getInt(SELECTED_INDEX);
         }

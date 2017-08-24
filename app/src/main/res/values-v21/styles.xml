@@ -15,10 +15,10 @@
 
         <!-- your app branding color for the app bar -->
     <!--<item name="colorPrimary">@color/lime_300</item>-->
-        <item name="colorPrimary">@color/lime_500</item>
+        <item name="colorPrimary">@color/teal_500</item>
 
         <!-- darker variant for the status bar and contextual app bars -->
-        <item name="colorPrimaryDark">@color/lime_700</item>
+        <item name="colorPrimaryDark">@color/teal_700</item>
 
         <!-- colorAccent is used as the default value for colorControlActivated which is used to tint widgets -->
         <!-- theme UI controls like checkboxes and text fields -->
@@ -30,7 +30,7 @@
         <!-- colorControlActivated overrides colorAccent as the activated or checked state for Checkboxes and RadioButtons -->
         <!-- colorControlHighlight controls the ripple coloring -->
         <!-- //////////////////////////////////////////////// -->
-        <item name="android:colorControlHighlight">@color/lime_300</item>
+        <item name="android:colorControlHighlight">@color/teal_300</item>
     <!--<item name="android:colorControlHighlight">@color/lime_700</item>-->
 
     <!--<item name="android:textColorSecondary">@color/white</item>--> <!-- only set/change overflow-icon color to white -->
