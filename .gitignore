@@ -9,10 +9,10 @@ build/
 *.jks
 
 # Google Services (e.g. APIs or Firebase)
-google-services.json
+/app/google-services.json
 
 # Built application files
-*.apk
+/*.apk
 
 # Ignore this file when load to GitHub
 # To give added security
