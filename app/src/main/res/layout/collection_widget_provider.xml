@@ -35,8 +35,8 @@
             android:maxLines="1"
             android:text="@string/widget_title"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/secondary_text"
-            android:textStyle="bold"/>
+            android:textColor="@color/widget_header_textcolor"
+            android:fontFamily="sans-serif-medium"/>
 
     </LinearLayout>
 
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:divider="@android:color/transparent"
+        android:divider="@color/divider"
         android:dividerHeight="@dimen/widget_listitem_divider">
 
     </ListView>

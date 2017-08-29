@@ -12,24 +12,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="@dimen/textview_text_size"/>
+        android:textSize="@dimen/textview_textsize"
+        android:fontFamily="sans-serif-light"
+        />
 
     <TextView
         android:id="@+id/movieratings_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="@dimen/textview_text_size"/>
+        android:textSize="@dimen/textview_textsize"
+        android:fontFamily="sans-serif-light"
+        />
 
     <TextView
         android:id="@+id/moviesynopsis_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:gravity="left"
         android:paddingStart="@dimen/cardview_content_padding"
         android:paddingEnd="@dimen/cardview_content_padding"
-        android:textColor="@color/text_black"
-        android:textSize="@dimen/textview_text_size"/>
+        android:textSize="@dimen/textview_textsize"
+        android:fontFamily="sans-serif-light"
+        android:typeface="normal"/>
 
 
     <ImageView
@@ -39,7 +44,6 @@
         android:layout_gravity="end"
         android:layout_marginEnd="@dimen/video_imageview_margin"
         android:layout_marginStart="@dimen/video_imageview_margin"
-        android:onClick="startYoutubeVideo"
 
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@drawable/youtube_play"/>

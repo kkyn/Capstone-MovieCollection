@@ -43,7 +43,6 @@
                 android:elevation="@dimen/toolbar_elevation"
                 android:minHeight="?android:attr/actionBarSize"
 
-
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:layout_collapseMode="pin"
                 >
@@ -103,7 +102,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="@string/my_admob_ap_id">
+        ads:adUnitId="@string/my_adunit_id">
 
     </com.google.android.gms.ads.AdView>
 

@@ -20,8 +20,8 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="widget_header_height">40dp</dimen>
     <dimen name="widget_listitem_divider">1dp</dimen>
     <dimen name="widget_listitem_height">35dp</dimen>
-    <dimen name="widget_listitem_text_size">18sp</dimen>
-    <dimen name="widget_text_margin">5dp</dimen>
+    <dimen name="widget_listitem_textsize">15sp</dimen>
+    <dimen name="widget_text_margin">10dp</dimen>
 
     <dimen name="fab_margin">24dp</dimen>
     <dimen name="fab_elevation">6dp</dimen>
@@ -34,13 +34,14 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="cardview_corner_radius">8dp</dimen>
     <dimen name="cardview_elevation">6dp</dimen>
     <dimen name="cardview_content_padding">14sp</dimen>
+    <dimen name="cardview_textsize">18sp</dimen>
 
     <dimen name="DynamicHeightNetworkImageView_height">0dp</dimen>
 
     <dimen name="video_imageview_size">67dp</dimen>
     <dimen name="video_imageview_margin">19dp</dimen>
 
-    <dimen name="textview_text_size">20sp</dimen>
+    <dimen name="textview_textsize">18sp</dimen>
     <dimen name="dialog_edittext_margin">4dp</dimen>
     <dimen name="linearlayout_padding">24dp</dimen>
 

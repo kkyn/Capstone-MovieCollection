@@ -638,7 +638,7 @@ public class MainFragment extends Fragment
 
         // +++++++++++++++++++++++++++++++++++++++++++++
         //--- Initialize the Mobile Ads SDK -----
-        MobileAds.initialize(getActivity(), getString(R.string.my_admob_ap_id));
+        MobileAds.initialize(getActivity(), getString(R.string.my_admobapp_id));
 
         //--- Begin, AdMob's:  AdRequest.Builder,  BannerAd stuff ------
         adRequest = new AdRequest.Builder()

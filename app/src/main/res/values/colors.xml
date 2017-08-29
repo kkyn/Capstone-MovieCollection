@@ -14,11 +14,13 @@
     <color name="orange_500">#ff9800</color>
 
     <color name="widget_header_background">#eeffffff</color>
-    <color name="widget_listitem_textcolor">#aaffffff</color>
+    <color name="widget_header_textcolor">#636363</color>
+    <color name="widget_listitem_textcolor">#eeeeee</color>
     <color name="cardview_background">#ffffffee</color>
+
     <color name="text_black">#000000</color>
 
-    <color name="primary_text">#212121</color>
-    <color name="secondary_text">#bbbbbb</color>
-    <color name="divider">#DDDDDD</color>
+    <color name="primary_text">#636363</color>
+    <color name="secondary_text">#eeeeee</color>
+    <color name="divider">#DeDeDe</color>
 </resources>

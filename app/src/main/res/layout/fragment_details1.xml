@@ -104,7 +104,6 @@
         android:layout_marginStart="@dimen/fab_margin"
         android:layout_marginEnd="@dimen/fab_margin"
         android:scaleType="center"
-        android:onClick="setFavoriteButton"
 
         app:elevation="@dimen/fab_elevation"
         app:fabSize="auto"
