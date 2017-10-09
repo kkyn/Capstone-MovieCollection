@@ -84,7 +84,8 @@
     <string name="dialog_comment">Do not enter beyond this year</string>
     <string name="dialog_submit">Submit</string>
     <string name="dialog_cancel">Cancel</string>
-    <string name="dialog_hint" translatable="false">  Year [ e.g.  <xliff:g id="yeeaar">%1$s</xliff:g> ]</string>
+    <string name="dialog_hint" translatable="false">  Year [ e.g.  <xliff:g id="year">%1$s</xliff:g> ]</string>
+    <!--<string name="dialog_hint" translatable="false">  Year [ e.g.  <xliff:g id="yeeaar">%1$s</xliff:g> ]</string>-->
     <!--<string name="default_year">2017</string>-->
 
     <!--  ++++++++++++++++++++++++++++++++++++++++++++++++++  -->

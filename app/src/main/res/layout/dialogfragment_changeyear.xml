@@ -15,10 +15,9 @@
         android:layout_marginRight="@dimen/dialog_edittext_margin"
         android:layout_marginTop="@dimen/dialog_edittext_margin"
 
-        android:inputType="number"
-
         android:imeOptions="actionDone"
+        android:inputType="number"
         android:textColor="@color/primary_text"
         />
-    16dp
+
 </LinearLayout>

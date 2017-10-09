@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:orientation="vertical"
-            android:paddingTop="@dimen/linearlayout_padding">
+            android:paddingTop="@dimen/detail_lnrlyt_padding">
 
 
             <include layout="@layout/fragment_details1_a"/>

@@ -46,8 +46,10 @@ public class ChangeYearDialogFragment extends DialogFragment
     public ChangeYearDialogFragment(){
     }
 
-    public static ChangeYearDialogFragment
-    newInstance(){
+    public static ChangeYearDialogFragment newInstance(){
+
+        /*return new ChangeYearDialogFragment();*/
+
         ChangeYearDialogFragment cyDialog = new ChangeYearDialogFragment();
         return cyDialog;
     }

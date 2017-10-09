@@ -90,8 +90,8 @@ public class DetailRcyclrVwAdapter extends RecyclerView.Adapter<DetailRcyclrVwAd
 
         public DetailsViewHolder(View itemView) {
             super(itemView);
-            reviewerTextView = (TextView) itemView.findViewById(R.id.Reviewer_textView);
-            reviewTextView = (TextView) itemView.findViewById(R.id.Review_textView);
+            reviewerTextView = (TextView) itemView.findViewById(R.id.reviewer_tv);
+            reviewTextView = (TextView) itemView.findViewById(R.id.review_tv);
         }
     }
     //--------------------------------------
