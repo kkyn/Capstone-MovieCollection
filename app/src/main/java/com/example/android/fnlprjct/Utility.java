@@ -81,7 +81,8 @@ public class Utility {
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
 
-        return sharedPreferences.getString(context.getString(R.string.pref_key_year), context.getResources().getString(R.string.default_year));
+        return sharedPreferences.getString(context.getString(R.string.pref_key_year), String.valueOf(getThisYearValue()));
+
     }
 
     //*****************************************************/

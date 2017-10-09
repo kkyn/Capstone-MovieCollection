@@ -21,7 +21,6 @@
     <string name="dialog_submit">Soumettre</string>
     <string name="dialog_cancel">Annuler</string>
     <!--<string name="dialog_hint">Entrez l\'exemple 2017</string>-->
-    <string name="default_year">2017</string>
 
     <string name="error_no_network">Pas de connectivité réseau! &#8212; \nChargera la liste supérieure des films lorsque le réseau sera disponible.</string>
     <string name="error_not_beyond_this_year">Ne pas entrer un nombre au-delà de cette année.</string>

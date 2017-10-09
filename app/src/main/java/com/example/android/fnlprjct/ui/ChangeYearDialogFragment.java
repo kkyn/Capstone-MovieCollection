@@ -104,6 +104,9 @@ public class ChangeYearDialogFragment extends DialogFragment
 
         ButterKnife.bind(this, view);
 
+        String year = Integer.toString(Utility.getThisYearValue());
+        enterYear_et.setHint(getActivity().getString(R.string.dialog_hint, year));
+
         // reference: stackoverflow.com -- 9596010 --
         // Set a special listener to be called when an action is performed on the edittext view.
         // Interface definition for a callback to be invoked when an action is performed on the editor.

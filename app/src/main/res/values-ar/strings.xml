@@ -22,7 +22,6 @@
     <string name="dialog_submit">عرض</string>
     <string name="dialog_cancel">إلغاء</string>
     <!--<string name="dialog_hint">أدخل مثال 2017</string>-->
-    <string name="default_year">2017</string>
 
     <string name="error_no_network">لا اتصال الشبكة! سيتم تحميل أعلى قائمة الأفلام عندما تكون الشبكة متوفرة.</string>
     <string name="error_not_beyond_this_year">يرجى عدم إدخال رقم ما بعد هذا العام.</string>
