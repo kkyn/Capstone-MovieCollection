@@ -37,6 +37,7 @@
             android:text="@string/textview_default_text"
             android:textSize="@dimen/cardview_textsize"
             android:fontFamily="sans-serif-light"
+            android:lineSpacingMultiplier="@fraction/line_spacing_multiplier"
             />
 
     </RelativeLayout>

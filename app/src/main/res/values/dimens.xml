@@ -33,8 +33,8 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="cardview_margin">4dp</dimen>
     <dimen name="cardview_corner_radius">8dp</dimen>
     <dimen name="cardview_elevation">6dp</dimen>
-    <dimen name="cardview_content_padding">14sp</dimen>
-    <dimen name="cardview_textsize">18sp</dimen>
+    <dimen name="cardview_content_padding">14dp</dimen>
+    <dimen name="cardview_textsize">15sp</dimen>
 
     <dimen name="DynamicHeightNetworkImageView_height">0dp</dimen>
 
@@ -42,6 +42,14 @@ http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
     <dimen name="video_imageview_margin">19dp</dimen>
 
     <dimen name="textview_textsize">18sp</dimen>
+    <dimen name="title_textsize">28sp</dimen>
+    <dimen name="title_rlsdate_textsize">20sp</dimen>
+    <dimen name="title_rating_textsize">16sp</dimen>
+    <dimen name="title_body_textsize">18sp</dimen>
+    <dimen name="title_padding">24dp</dimen>
+
+    <item name="line_spacing_multiplier" format="float" type="fraction">1.25</item>
+
     <dimen name="dialog_edittext_margin">4dp</dimen>
     <dimen name="linearlayout_padding">24dp</dimen>
 

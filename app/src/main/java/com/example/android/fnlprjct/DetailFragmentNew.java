@@ -20,6 +20,8 @@ import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -35,7 +37,12 @@ import com.example.android.fnlprjct.adapter.DetailRcyclrVwAdapter;
 import com.example.android.fnlprjct.data.MovieContract.MovieInfoEntry;
 import com.example.android.fnlprjct.data.MovieContract.MovieReviewEntry;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -82,6 +89,12 @@ public class DetailFragmentNew extends Fragment
     private Uri mUri;
     private int mItemId;
 
+    private Cursor mCursor0;
+
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
+    private SimpleDateFormat outputFormat = new SimpleDateFormat();
+    private GregorianCalendar START_OF_EPOCH = new GregorianCalendar(2,1,1);
+
     private DetailRcyclrVwAdapter detailsAdapter;
     public boolean isFavouriteEnabled = false;
 
@@ -89,6 +102,7 @@ public class DetailFragmentNew extends Fragment
     private AnimatedVectorDrawable fillHeart;
 
     @BindView(R.id.moviethumbnail_iv) DynamicHeightNetworkImageView  moviethumbnail;
+    @BindView(R.id.title_tv) TextView movieTitle;
     @BindView(R.id.moviereleasedate_tv) TextView moviereleasedate;
     @BindView(R.id.movieratings_tv) TextView movieratings;
     @BindView(R.id.moviesynopsis_tv) TextView moviesynopsis;
@@ -143,7 +157,7 @@ public class DetailFragmentNew extends Fragment
 
         ContentValues
             contentValues = new ContentValues();
-            contentValues.put(MovieInfoEntry.COL_FAVOURITES, 0);
+        contentValues.put(MovieInfoEntry.COL_FAVOURITES, 0);
 
         String select = MovieInfoEntry.COL_MOVIE_ID + "=?";
         String[] selectArg = new String[]{movieID};
@@ -406,7 +420,36 @@ public class DetailFragmentNew extends Fragment
 
             if (cursor != null && cursor.moveToFirst()) {
 
-                moviereleasedate.setText(cursor.getString(MyQuery.MovieInfo.COL_RELEASEDATE));
+                //===================================
+                mCursor0 = cursor;
+
+                movieTitle.setText(mCursor0.getString(MyQuery.MovieInfo.COL_MOVIE_TITLE));
+
+                // Represent date as "Month,Day,Year"
+                //--------------------------------------
+                Date publishedDate = parsePublishedDate();
+
+                if (!publishedDate.before(START_OF_EPOCH.getTime())) {
+                    moviereleasedate.setText(
+                        Html.fromHtml(
+                            DateUtils.getRelativeTimeSpanString(
+                                publishedDate.getTime(),
+                                System.currentTimeMillis(),
+                                0
+                            ).toString()
+                        )
+                    );
+
+                } else {
+                    // If date is before 1902, just show the string
+                    moviereleasedate.setText(
+                        Html.fromHtml(
+                            outputFormat.format(publishedDate)
+                        )
+                    );
+
+                }
+                //===================================
 
                 String string = Utility.getPreferredSortSequence(getContext());
                 if (string.equals(getString(R.string.pref_value_movies_sortby_ratings))){
@@ -509,4 +552,18 @@ public class DetailFragmentNew extends Fragment
             detailsAdapter.swapCursor(null);
         }
     };
+
+    //------------------------------------------------------------
+    // format the date
+    private Date parsePublishedDate(){
+        try {
+            String date = mCursor0.getString(MyQuery.MovieInfo.COL_RELEASEDATE);
+            return dateFormat.parse(date);
+        } catch (ParseException ex){
+            Log.e(LOG_TAG, ex.getMessage());
+            Log.i(LOG_TAG, "passing today's date");
+            return new Date();
+        }
+    }
+
 }

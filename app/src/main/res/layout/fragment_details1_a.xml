@@ -8,6 +8,17 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-bold"
+        android:gravity="center_horizontal"
+        android:paddingEnd="@dimen/title_padding"
+        android:paddingStart="@dimen/title_padding"
+        android:textSize="@dimen/title_textsize"
+        />
+
+    <TextView
         android:id="@+id/moviereleasedate_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,6 +45,7 @@
         android:paddingEnd="@dimen/cardview_content_padding"
         android:textSize="@dimen/textview_textsize"
         android:fontFamily="sans-serif-light"
+        android:lineSpacingMultiplier="@fraction/line_spacing_multiplier"
         android:typeface="normal"/>
 
 
