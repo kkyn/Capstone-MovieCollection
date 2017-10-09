@@ -596,7 +596,10 @@ public class MainFragment extends Fragment
         //gridlm = new GridLayoutManager(getContext(), 2);
         //mainRyclrVw.setLayoutManager(gridlm);
         // --or--
-        stgrdgrdlm = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        //stgrdgrdlm = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        // --or--
+        int columnCount = getResources().getInteger(R.integer.list_column_count);
+        stgrdgrdlm = new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
 
         mainRyclrVw.setLayoutManager(stgrdgrdlm);
         mainRyclrVw.setAdapter(rvAdapter);
